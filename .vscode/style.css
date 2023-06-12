@@ -31,6 +31,7 @@ body {
   /* como criar um atalio no backgroud*/
   /*1 eu tenho backgroud: color image 2 no-repeat 3 top center 4 cover no cover tenho que colocar uma barra */
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 body * {
   font-family: "Inter", sans-serif;
@@ -147,4 +148,14 @@ footer {
   padding: 24 0;
   text-align: center;
   font-size: 14px;
+}
+
+/* media queries */
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg); 
+  }
 }
